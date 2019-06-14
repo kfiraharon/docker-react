@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t kaharon-docker-react -f Dovkerfile.dev .
+  - docker build -t kaharon-docker-react -f Dockerfile.dev .
 
 script:
   - docker run kaharon-docker-react npm run test -- --coverage
